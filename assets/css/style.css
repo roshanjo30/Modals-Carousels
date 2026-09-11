@@ -1,0 +1,110 @@
+body{
+    margin: 20px;
+    background-color: rgb(28, 50, 68)
+}
+
+#topbar{
+    display: flex;
+    background-color: rgb(226, 242, 255);
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+#topbar img{
+    margin-left: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+#modal {
+    position: fixed;
+    z-index: 1;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#modal[hidden] {
+    display: none;
+}
+
+.modal-content {
+    background: white;
+    padding: 10px;
+}
+
+#modal img{
+    width: 200px;
+    height: 100px;
+}
+
+.carousel{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    height: 500px;
+    margin: auto;
+    
+}
+
+.slides {
+    width: 100%;
+    height: 100%;
+}
+.slide{
+    width: 100%;
+    height: 100%;
+}
+
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+#previous,
+#next {
+    font-size: 20px;
+    background: none;
+    border-radius: 15px;
+    border-color: #e7e7e763;
+    position: absolute;
+    top: 50%;
+    color: #e7e7e764;
+   
+}
+
+#previous{
+    left:10px
+}
+
+#next{
+   right: 10px;
+
+}
+#previous:hover, #next:hover{
+    color: #e7e7e7;
+    border-color: #e7e7e7;
+    cursor: pointer;
+}
+
+.dots {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    display: flex;
+    gap: 10px;
+    z-index: 0;
+    color: rgb(248, 255, 253);
+}
+
+.dots button{
+    border: none;
+    color:rgba(255, 255, 255, 0.722);
+    background: none;
+}
+

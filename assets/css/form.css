@@ -1,0 +1,24 @@
+.form{
+    z-index: 1;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.26);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.form[hidden] {
+    display: none;
+}
+
+.form-content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 16px;
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+}
+

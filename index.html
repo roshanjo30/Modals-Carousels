@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/form.css">
+        <title>BMW</title>
+    </head>
+    <body>
+
+        <div id="topbar">
+            <img src="assets/images/bmw_logo.png" width="100" height="100">
+        </div>
+
+        <div id="modal" > 
+            <div class="modal-content">
+                <img src="assets/images/bmw_ann.png" width="50" height="50">
+                <button id="close-modal">X</button>
+            </div>
+        </div>
+        
+        <div class="carousel">
+            <button id="previous"><-</button>
+
+            <div class="slides">
+                <div class="slide">
+                    <img src="assets/images/bmw1.jpg" alt="bmw1" width="100" height="200">
+                </div>
+                <div class="slide">
+                    <img src="assets/images/bmw2.jpg" alt="bmw2" width="100" height="200">
+                </div>
+                <div class="slide">
+                    <img src="assets/images/bmw3.jpg" alt="bmw3" width="100" height="200">
+                </div>
+            </div>
+
+            <button id="next">-></button>
+            <div class="dots">
+                <button class="dot">O</button>
+                <button class="dot">O</button>
+                <button class="dot">O</button>
+            </div>
+        </div>
+
+        <button id="book">BOOK A TEST DRIVE</button>
+
+        <div class="form" hidden>
+
+            <div class="form-content">
+                <h3>Step 1: Personal Details</h3>
+
+                <label for="name">Name</label>
+                <input type="text" id="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" required>
+
+                <button type="button" class="next">Next</button>
+            </div>
+
+        </div>
+       
+
+        <script src="assets/js/modal.js"></script>
+        <script src="assets/js/carousel.js"></script>
+        <script src="assets/js/form.js"></script>
+    </body>
+</html>
+
