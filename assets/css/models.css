@@ -1,0 +1,26 @@
+.models{
+    display: flex;
+  
+    padding: 10px;
+    background-color: rgb(226, 242, 255);
+
+    margin-top: 25px;
+    border-radius: 12px;
+}
+
+#prev, #nex{
+    background: none;
+    border: none;
+}
+
+#search{
+    border-radius: 10px;
+    border:none;
+    height: 20px;
+}
+
+#prev:hover, #nex:hover{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
