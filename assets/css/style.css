@@ -5,10 +5,34 @@ body{
 
 #topbar{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: rgb(226, 242, 255);
-    border-radius: 10px;
+    border-radius: 12px;
     margin-bottom: 10px;
 }
+
+.topcontent{
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#book{
+    margin-right: 10px;
+    border-radius: 10px;
+    font-size: 11px;
+    width: 70px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: none;
+    font-weight: bold;
+    border: none;
+}
+
+#book:hover{
+    cursor: pointer;
+}
+
 #topbar img{
     margin-left: 10px;
     width: 50px;
@@ -38,6 +62,9 @@ body{
 #modal img{
     width: 200px;
     height: 100px;
+}
+#close-modal{
+    b
 }
 
 .carousel{
@@ -107,4 +134,5 @@ body{
     color:rgba(255, 255, 255, 0.722);
     background: none;
 }
+
 

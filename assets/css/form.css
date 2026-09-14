@@ -12,7 +12,7 @@
     display: none;
 }
 
-.form-content{
+.form-step{
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -20,5 +20,47 @@
     background: white;
     padding: 30px;
     border-radius: 20px;
+}
+
+
+.form-step[hidden] {
+    display: none;
+}
+
+.next{
+    background-color:  rgb(28, 50, 68);
+    color: #ffffff;
+    border: none;
+    width: 60px;
+    height: 25px;
+    border-radius: 10px;
+
+}
+
+.next:hover{
+    background-color:  rgba(28, 50, 68, 0.7);
+    cursor: pointer;
+}
+
+#email-error{
+    color: rgb(200, 0, 0);
+    font-size: 13px;
+}
+
+#field-error{
+    color: rgb(200, 0, 0);
+    font-size: 13px;
+}
+
+.done{
+    background-color:rgb(28, 50, 68); 
+    color: white;
+    border: none;
+    border-radius: 12px;
+}
+
+.done:hover{
+    background-color:  rgba(28, 50, 68, 0.7);
+    cursor: pointer;
 }
 
