@@ -55,6 +55,7 @@ body{
 }
 
 .modal-content {
+    display: flex;
     background: white;
     padding: 10px;
 }
@@ -63,8 +64,11 @@ body{
     width: 200px;
     height: 100px;
 }
-#close-modal{
-    b
+
+#close-modal {
+    height: 2px;
+    background: none;
+    border: none;
 }
 
 .carousel{
