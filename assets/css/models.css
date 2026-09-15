@@ -1,6 +1,7 @@
 .models{
     display: flex;
-  
+    justify-content: space-between;
+
     padding: 10px;
     background-color: rgb(226, 242, 255);
 
@@ -23,4 +24,12 @@
     background: none;
     border: none;
     cursor: pointer;
+}
+
+#sort{
+    margin-top: 77px;
+    background-color: rgb(226, 242, 255);
+    border-color: rgb(28, 50, 68);
+    border-width: 1px;
+    border-radius: 10px;
 }

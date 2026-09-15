@@ -4,6 +4,7 @@
         <link rel="stylesheet" href="assets/css/style.css">
         <link rel="stylesheet" href="assets/css/form.css">
         <link rel="stylesheet" href="assets/css/models.css">
+        <link rel="stylesheet" href="assets/css/scroll.css">
         <title>BMW</title>
     </head>
     <body>
@@ -106,10 +107,20 @@
                     </div>
                 </div>
 
-                
+                <div class="sorting">
+                    <select id="sort">
+                        <option value="default">Default</option>
+                        <option value="asc">A → Z</option>
+                        <option value="desc">Z → A</option>
+                    </select>
+                </div>
+        </div>
 
-            
+        <div class="scroll">
+            <h2>Gallery</h2>
+            <div id="posts"></div>
 
+            <p id="loading" hidden>Loading...</p>
         </div>
        
        
@@ -118,6 +129,7 @@
         <script src="assets/js/carousel.js"></script>
         <script src="assets/js/form.js"></script>
         <script src="assets/js/models.js"></script>
+        <script src="assets/js/posts.js"></script>
     </body>
 </html>
 

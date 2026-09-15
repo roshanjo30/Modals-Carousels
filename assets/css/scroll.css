@@ -1,0 +1,19 @@
+#posts{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-items: center;
+    
+}
+
+
+.scroll h2{
+    color: rgb(226, 242, 255);
+    text-align: center;
+
+}
+
+#loading{
+    color: white;
+    text-align: center;
+}

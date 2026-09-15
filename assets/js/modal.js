@@ -10,7 +10,6 @@ modal.addEventListener("click", (event) => {
     if (event.target === modal) {
 
         modal.hidden = true;
-
     }
 
 });
