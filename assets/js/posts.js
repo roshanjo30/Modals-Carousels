@@ -21,6 +21,8 @@ async function loadPosts(){
         image.src = `https://picsum.photos/400/250?random=${post.id}`;
         image.alt = post.title;
 
+        image.loading = "lazy";
+
         card.appendChild(image);
         posts.appendChild(card);
         

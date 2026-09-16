@@ -6,6 +6,7 @@ const emailError=document.querySelector("#email-error");
 const fieldError=document.querySelector("#field-error");
 const done=document.querySelector(".done");
 
+const nameInput=document.querySelector("#name");
 
 book.addEventListener("click", (event)=>{
         form.hidden = false;
@@ -119,3 +120,19 @@ async function submitData() {
 
     console.log(result);
 }
+
+
+document.addEventListener("keydown", (event)=>{
+    if (event.key === "Escape"){
+        form.hidden=true;
+
+        book.focus();
+    }
+})
+
+book.addEventListener("click", () => {
+    form.hidden=false;
+    nameInput.focus();
+})
+
+
