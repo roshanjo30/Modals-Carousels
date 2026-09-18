@@ -42,6 +42,11 @@ function updateDots() {
         dot.addEventListener("click", () => {
             currentSlide=index;
             showSlide(currentSlide);
+            dots.forEach((dot) => {
+                dot.removeAttribute("aria-current");
+            });
+
+            dot.setAttribute("aria-current", "true");
         });
     });
 }

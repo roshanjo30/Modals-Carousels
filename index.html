@@ -9,40 +9,42 @@
     </head>
     <body>
 
-        <div id="topbar">
-            <img src="assets/images/bmw_logo.png" width="100" height="100">
-            <p class="topcontent">Sedan</p>
-            <p class="topcontent">SUV</p>
-            <button id="book">BOOK A TEST DRIVE</button>
-        </div>
+        <header>
+            <nav id="topbar">
+                <img src="assets/images/bmw_logo.png" alt="BMW logo" width="100" height="100">
+                <p class="topcontent">Sedan</p>
+                <p class="topcontent">SUV</p>
+                <button id="book">BOOK A TEST DRIVE</button>
+            </nav>
 
-        <div id="modal" > 
-            <div class="modal-content">
-                <img src="assets/images/bmw_ann.png" width="50" height="50">
-                <button id="close-modal">X</button>
+            <div id="modal" > 
+                <div class="modal-content">
+                    <img src="assets/images/bmw_ann.png" alt="BMW anniversary logo" width="50" height="50">
+                    <button id="close-modal" aria-label="close-modal">X</button>
+                </div>
             </div>
-        </div>
-        
+        </header>
+
         <div class="carousel">
-            <button id="previous"><-</button>
+            <button id="previous" aria-label="Previous Slide"><-</button>
 
             <div class="slides">
                 <div class="slide">
-                    <img src="assets/images/bmw1.jpg" alt="bmw1" width="100" height="200">
+                    <img src="assets/images/bmw1.jpg" alt="bmw coupe" width="100" height="200">
                 </div>
                 <div class="slide">
-                    <img src="assets/images/bmw2.jpg" alt="bmw2" width="100" height="200">
+                    <img src="assets/images/bmw2.jpg" alt="bmw coupe" width="100" height="200">
                 </div>
                 <div class="slide">
-                    <img src="assets/images/bmw3.jpg" alt="bmw3" width="100" height="200">
+                    <img src="assets/images/bmw3.jpg" alt="bmw coupe" width="100" height="200">
                 </div>
             </div>
+            <button id="next" aria-label="Next Slide">-></button>
 
-            <button id="next">-></button>
             <div class="dots">
-                <button class="dot">O</button>
-                <button class="dot">O</button>
-                <button class="dot">O</button>
+                <button class="dot" aria-label="Go to slide 1" aria-current="true">O</button>
+                <button class="dot" aria-label="Go to slide 2">O</button>
+                <button class="dot" aria-label="Go to slide 3">O</button>
             </div>
         </div>
 
@@ -57,11 +59,14 @@
                     <input type="text" id="name" required>
 
                     <label for="email">Email</label>
-                    <input type="email" id="email" required>
+                    <input type="email" 
+                           id="email" 
+                           aria-describedby="email-error"
+                           required>
 
                     <button type="button" class="next">Next</button>
 
-                    <p id="email-error"></p>
+                    <p id="email-error" role="alert"></p>
                 </div>
                 
             
@@ -70,13 +75,13 @@
                     <h3>Step 2: Address</h3>
     
                     <label for="city">City</label>
-                    <input type="text" id="city" required>
+                    <input type="text" id="city" aria-describedby="field-error"required>
     
                     <label for="zip">ZipCode</label>
-                    <input type="text" id="zip" required>
+                    <input type="text" id="zip" aria-describedby="field-error" required>
     
                     <button type="button" class="next">Next</button>
-                    <p id="field-error"></p>
+                    <p id="field-error" role="alert"></p>
 
                 </div>
                 <div class="form-step" hidden>
